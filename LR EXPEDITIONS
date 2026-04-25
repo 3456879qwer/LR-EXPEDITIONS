@@ -1,0 +1,65 @@
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\hp> cat index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki Expeditions | The Heart of Africa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ochre: #A0522D; --acacia: #4F7942; --cream: #FDF5E6; --dark: #1a1a1a; --masai-red: #C62828;
+        }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--cream); margin: 0; color: var(--dark); }
+        nav { background: white; padding: 20px 5%; display: flex; justify-content: space-between; border-bottom: 4px solid var(--ochre); }
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin: 0; }
+        .btn { background: var(--masai-red); color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background: var(--ochre); }
+        .content { padding: 50px 5%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px; }
+        .card { background: white; padding: 0; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-inner { padding: 20px; }
+        footer { background: var(--dark); color: #888; padding: 40px 5%; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--ochre); font-weight: bold;">RAFIKI</div>
+        <div style="font-weight: bold;">+254 7XX XXX XXX</div>
+    </nav>
+    <header class="hero">
+        <h1>Safari Njema</h1>
+        <p>Authentic East African Adventures Await</p>
+        <a href="#" class="btn">Explore Destinations</a>
+    </header>
+    <section class="content">
+        <h2>Legendary Circuits</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=400&q=80" alt="Serengeti">
+                <div class="card-inner"><h3>Serengeti, Tanzania</h3><p>Witness the Great Migration.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=400&q=80" alt="Maasai Mara">
+                <div class="card-inner"><h3>Maasai Mara, Kenya</h3><p>The jewel of the savannah.</p></div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1533221370042-37651a134303?auto=format&fit=crop&w=400&q=80" alt="Gorilla">
+                <div class="card-inner"><h3>Bwindi, Uganda</h3><p>Meet the Mountain Gorillas.</p></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Rafiki Expeditions. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
